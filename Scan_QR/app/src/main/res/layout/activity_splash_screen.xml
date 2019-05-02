@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="alamsyah.scan_qr.SplashScreen"
+    android:background="@drawable/bg_header_new">
+
+<android.support.v4.view.ViewPager
+    android:id="@+id/view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.v4.view.ViewPager>
+<LinearLayout
+    android:id="@+id/cen"
+    android:layout_centerVertical="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv"
+        android:src="@drawable/logo_ditrupto"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+    <TextView
+
+        android:fontFamily="cursive"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#fd526c" />
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<com.eyalbira.loadingdots.LoadingDots-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--app:LoadingDots_auto_play="true"-->
+            <!--app:LoadingDots_dots_color="@android:color/white"-->
+            <!--app:LoadingDots_dots_count="5"-->
+            <!--app:LoadingDots_dots_size="10dp"-->
+            <!--app:LoadingDots_dots_space="4dp"-->
+            <!--app:LoadingDots_loop_duration="900"-->
+            <!--app:LoadingDots_loop_start_delay="100"-->
+
+            <!--app:LoadingDots_jump_duration="400"-->
+            <!--app:LoadingDots_jump_height="15dp"/>-->
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:layout_below="@id/cen"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/dev"
+        android:layout_gravity="bottom"
+        android:src="@drawable/presented"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+    <!--<TextView-->
+        <!--android:fontFamily="casual"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_margin="1dp"-->
+        <!--android:gravity="right"-->
+        <!--android:textColor="#fff"-->
+        <!--android:id="@+id/dev"-->
+        <!--android:text="Hello"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+</LinearLayout>
+</RelativeLayout>

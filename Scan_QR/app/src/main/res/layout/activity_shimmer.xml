@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_shimmer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="alamsyah.scan_qr.Shimmer">
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/shimmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        shimmer:duration="1000">
+        <ImageView
+            android:src="@drawable/ar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <Button
+        android:id="@+id/stop"
+        android:text="Stop"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:fontFamily="cursive"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        />
+</RelativeLayout>

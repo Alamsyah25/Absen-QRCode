@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/android_coordinator_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QrCode"
+                android:textSize="30sp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@+id/toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:id="@+id/header"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="10dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:background="@drawable/bg_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/logo_ditrupto"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/header"
+                android:id="@+id/absen"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="10dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:background="@drawable/bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/guest"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:fontFamily="casual"
+                        android:textColor="#444"
+                        android:gravity="center"
+                        android:layout_marginRight="35dp"
+                        android:layout_gravity="center"
+                        android:textSize="25sp"
+                        android:text="Absen Tamu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:id="@+id/atau"
+                android:layout_below="@+id/absen"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"/>
+                <android.support.v7.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_alignParentBottom="true"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    card_view:cardElevation="7dp"
+                    card_view:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="Atau"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <View
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

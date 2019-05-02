@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Scan_QR</string>
+    <string name="next">Selanjutnya</string>
+    <string name="skip">Lewati</string>
+    <string name="start">Mengerti!</string>
+    <string name="lorem_dec">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s
+    </string>
+        <string name="lorem">
+        Lorem Ipsum is simply dummy text of the printing.
+    </string>
+</resources>
